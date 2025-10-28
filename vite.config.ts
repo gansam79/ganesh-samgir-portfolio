@@ -1,10 +1,17 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
+import path from "path";
 
-// Simplified Vite config for GitHub Pages base path
+// Simplified Vite config for GitHub Pages base path (includes aliases needed by the app)
 export default defineConfig({
   base: "/ganesh-samgir-portfolio/",
   plugins: [react()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./client"),
+      "@shared": path.resolve(__dirname, "./shared"),
+    },
+  },
 });
 
 // import { defineConfig, Plugin } from "vite";
