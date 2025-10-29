@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
+import resumePDF from "../src/assets/Ganesh-Samgir-79-Resume.pdf";
 
 export default function Hero() {
   const containerVariants = {
@@ -27,7 +28,10 @@ export default function Hero() {
       {/* Animated gradient background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }}></div>
+        <div
+          className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "1s" }}
+        ></div>
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-background"></div>
       </div>
 
@@ -89,14 +93,15 @@ export default function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <a
-              href="/Ganesh-Samgir-79-Resume.pdf"
-              download
+              href={resumePDF} // ✅ use imported PDF here
+              download="Ganesh_Samgir_Resume.pdf"
               className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors group"
             >
               <Download size={20} />
               Download Resume
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </a>
+
             <a
               href="#contact"
               className="inline-flex items-center gap-2 px-8 py-3 border border-primary/50 text-primary rounded-lg font-semibold hover:bg-primary/10 transition-colors group"
