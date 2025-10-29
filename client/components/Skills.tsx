@@ -26,22 +26,26 @@ export default function Skills() {
       transition: { duration: 0.8, ease: "easeOut" },
     },
   };
-
   const skillCategories = [
     {
-      title: "Languages",
+      title: "Programming Languages",
       icon: "💻",
-      skills: ["PHP", "JavaScript", "HTML", "CSS", "Python", "SQL", "JSON"],
+      skills: ["PHP", "JavaScript", "Python", "SQL", "HTML", "CSS", "JSON"],
     },
     {
       title: "Frameworks & Libraries",
-      icon: "🛠️",
-      skills: ["React", "AngularJS", "Laravel", "CodeIgniter", "Bootstrap"],
+      icon: "🧩",
+      skills: ["React.js", "Node.js", "AngularJS", "Laravel", "CodeIgniter", "Bootstrap"],
+    },
+    {
+      title: "Databases",
+      icon: "🗄️",
+      skills: ["MySQL", "phpMyAdmin", "MongoDB", "PostgreSQL"],
     },
     {
       title: "Tools & Platforms",
       icon: "⚙️",
-      skills: ["GitLab", "FileZilla", "Postman", "XAMPP", "VS Code", "Sublime Text"],
+      skills: ["GitHub", "GitLab", "Postman", "FileZilla", "XAMPP", "VS Code", "Sublime Text"],
     },
     {
       title: "Hosting & DevOps",
@@ -49,6 +53,8 @@ export default function Skills() {
       skills: ["cPanel", "Hostinger", "DigitalOcean"],
     },
   ];
+
+
 
   return (
     <section

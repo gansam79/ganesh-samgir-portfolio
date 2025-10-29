@@ -111,15 +111,18 @@ export default function Projects() {
   const classProjects = [
     {
       title: "Share Market App",
-      description: "Stock tracking and visualization application with dynamic data updates.",
-      tech: ["React", "JavaScript"],
+      description:
+        "A real-time stock tracking and visualization web application with dynamic data updates, built using React for the frontend, Node.js for the backend, and MongoDB for data storage.",
+      tech: ["React", "Node.js", "MongoDB", "JavaScript", "CSS"],
     },
     {
       title: "Perfume App",
-      description: "E-commerce-style product showcase and selection interface.",
-      tech: ["React", "CSS"],
+      description:
+        "An e-commerce-style web application for showcasing and selecting perfumes, featuring product listings, search functionality, and modern UI design.",
+      tech: ["React", "CSS", "JavaScript"],
     },
   ];
+
 
   return (
     <section
@@ -218,7 +221,7 @@ export default function Projects() {
           animate={inView ? "visible" : "hidden"}
         >
           <h3 className="text-2xl font-bold text-foreground mb-8">
-            Class <span className="text-primary">Projects</span>
+            Personal <span className="text-primary">Projects</span>
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
