@@ -93,7 +93,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <a
-              href={resumePDF} // ✅ use imported PDF here
+              href="/Ganesh-Samgir-79-Resume.pdf"
               download="Ganesh_Samgir_Resume.pdf"
               className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors group"
             >
@@ -102,13 +102,6 @@ export default function Hero() {
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </a>
 
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 px-8 py-3 border border-primary/50 text-primary rounded-lg font-semibold hover:bg-primary/10 transition-colors group"
-            >
-              Contact Me
-              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-            </a>
           </motion.div>
 
           {/* Scroll indicator */}
